@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var spotify_service_1 = require('./services/spotify.service');
 var AppComponent = (function () {
     function AppComponent() {
         this.name = 'Angular';
@@ -18,6 +19,7 @@ var AppComponent = (function () {
             moduleId: module.id,
             selector: 'my-app',
             templateUrl: "app.component.html",
+            providers: [spotify_service_1.SpotifyService]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
