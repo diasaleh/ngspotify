@@ -16,6 +16,7 @@ var app_component_1 = require('./app.component');
 var search_component_1 = require('./components/search/search.component');
 var navbar_component_1 = require('./components/navbar/navbar.component');
 var about_component_1 = require('./components/about/about.component');
+var artist_component_1 = require('./components/artist/artist.component');
 var app_routing_1 = require('./app.routing');
 var AppModule = (function () {
     function AppModule() {
@@ -27,6 +28,7 @@ var AppModule = (function () {
                 search_component_1.SearchComponent,
                 navbar_component_1.NavbarComponent,
                 about_component_1.AboutComponent,
+                artist_component_1.ArtistComponent,
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 
