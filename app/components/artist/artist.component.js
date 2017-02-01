@@ -24,6 +24,9 @@ var ArtistComponent = (function () {
             _this._spotifyServive.getArtist(id).subscribe(function (artist) {
                 _this.artist = artist;
             });
+            _this._spotifyServive.getAlbums(id).subscribe(function (albums) {
+                _this.albums = albums.items;
+            });
         });
     };
     ArtistComponent = __decorate([

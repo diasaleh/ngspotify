@@ -25,6 +25,9 @@ export class ArtistComponent implements OnInit {
                 this._spotifyServive.getArtist(id).subscribe(artist => {
                     this.artist = artist;
                 })
+                this._spotifyServive.getAlbums(id).subscribe(albums => {
+                    this.albums = albums.items;
+                })
              });
     }
 }
